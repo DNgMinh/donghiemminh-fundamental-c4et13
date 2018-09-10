@@ -1,3 +1,24 @@
+body {
+    background-color: black;
+    background-size: cover; 
+}
+
+#text1 {
+    color: brown;
+}
+
+#text2 {
+    color: blue;
+}
+
+#text3 {
+    color: yellow;
+}
+
+#text4 {
+    color: green;
+}
+
 .title {
     font-size: 5rem;
     color: rgb(218, 127, 42);
@@ -19,6 +40,6 @@
 }
 
 #button {
-    color: brown;
+    color: red;
     margin: 0 auto;
 }

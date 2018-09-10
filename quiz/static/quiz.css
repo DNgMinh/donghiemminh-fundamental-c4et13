@@ -1,0 +1,13 @@
+.left {
+    float: left;
+    margin: 10px;
+}
+#title {
+    font-size: 4rem;
+    color: rgb(218, 127, 42);
+}
+
+body {
+    background-color: aquamarine;
+    background-size: cover; 
+}
