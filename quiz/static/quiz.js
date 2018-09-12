@@ -1,6 +1,7 @@
 let ques = document.getElementById('ques');
 let a1 = document.getElementById('a1');
 let a2 = document.getElementById('a2');
+let result=document.getElementById('result')
 ques.innerHTML = 'Would you consider your face to be longer than it is wide?';
 a1.innerHTML='Think so...';
 a2.innerHTML='Not really...';
@@ -11,9 +12,10 @@ a1.addEventListener("click", function(){
     a1.innerHTML = "Definitely";
     a2.innerHTML = "Enough to notice";
     a1.addEventListener("click", function(){
-        ques.innerHTML='Your face is oblong';
+        result.innerHTML='Your face is oblong';
         a1.hidden= true;
         a2.hidden = true;
+        ques.hidden=true;
     })
         
     a2.addEventListener("click", function(){
@@ -24,17 +26,23 @@ a1.addEventListener("click", function(){
             ques.innerHTML='Are your checkbones narrower than your forehead';
             a1.innerHTML= "Yes";
             a2.innerHTML= "No";
+            ques.hidden=false;
             a1.hidden=false;
             a2.hidden=false;
+            result.hidden=true;
             a1.addEventListener("click", function(){
-                ques.innerHTML = "Your face is heart";
-                a1.hidden = true;
+                result.innerHTML = "Your face is heart";
+                a1.hidden= true;
                 a2.hidden = true;
+                ques.hidden=true;
+                result.hidden=false;
             })
             a2.addEventListener("click", function(){
-            ques.innerHTML = "Your face is oval";
+            result.innerHTML = "Your face is oval";
             a1.hidden= true;
             a2.hidden =true;
+            ques.hidden=true;
+            result.hidden=false;
             })
         })
         a2.addEventListener("click", function(){
@@ -42,14 +50,18 @@ a1.addEventListener("click", function(){
             a1.innerHTML= 'yes';
             a2.innerHTML= 'no';
             a1.addEventListener("click", function(){
-                ques.innerHTML='Your face is diamond';
+                result.innerHTML='Your face is diamond';
                 a1.hidden= true;
                 a2.hidden= true;
+                ques.hidden=true;
+                result.hidden=false;
             })
             a2.addEventListener("click", function(){
-                ques.innerHTML='Your face is triangle';
+                result.innerHTML='Your face is triangle';
                 a1.hidden=true;
                 a2.hidden=true;
+                ques.hidden=true;
+                result.hidden=false;
             })    
         })
     })        
@@ -67,17 +79,23 @@ a2.addEventListener("click", function(){
             ques.innerHTML='Are your checkbones narrower than your forehead';
             a1.innerHTML= "Yes";
             a2.innerHTML= "No";
+            result.hidden=true;
             a1.hidden=false;
             a2.hidden=false;
+            ques.hidden=false;
             a1.addEventListener("click", function(){
-                ques.innerHTML = "Your face is heart";
+                result.innerHTML = "Your face is heart";
                 a1.hidden = true;
                 a2.hidden = true;
+                ques.hidden=true;
+                result.hidden=false;
             })
             a2.addEventListener("click", function(){
-            ques.innerHTML = "Your face is oval";
+            result.innerHTML = "Your face is oval";
             a1.hidden= true;
             a2.hidden =true;
+            ques.hidden=true;
+            result.hidden=false;
             })
         })
         a2.addEventListener("click", function(){
@@ -85,14 +103,18 @@ a2.addEventListener("click", function(){
             a1.innerHTML= 'yes';
             a2.innerHTML= 'no';
             a1.addEventListener("click", function(){
-                ques.innerHTML='Your face is diamond';
+                result.innerHTML='Your face is diamond';
                 a1.hidden= true;
                 a2.hidden= true;
+                ques.hidden=true;
+                result.hidden=false;
             })
             a2.addEventListener("click", function(){
-                ques.innerHTML='Your face is triangle';
+                result.innerHTML='Your face is triangle';
                 a1.hidden=true;
                 a2.hidden=true;
+                ques.hidden=true;
+                result.hidden=false;
             })    
         })
     })  
@@ -102,15 +124,21 @@ a2.addEventListener("click", function(){
         a2.innerHTML= "Soft";
         a1.hidden=false;
         a2.hidden=false;
+        result.hidden=true;
+        ques.hidden=false;
         a1.addEventListener("click", function(){
-            ques.innerHTML = "Your face is square";
+            result.innerHTML = "Your face is square";
             a1.hidden = true;
             a2.hidden = true;
+            ques.hidden=true;
+            result.hidden=false;
         })
         a2.addEventListener("click", function(){
-        ques.innerHTML = "Your face is round";
+        result.innerHTML = "Your face is round";
+        ques.hidden=true;
         a1.hidden= true;
         a2.hidden =true;
+        result.hidden=false;
         })
     })      
 })
