@@ -4,7 +4,7 @@ from flask import *
 app=Flask(__name__)
 
 @app.route('/')
-def home():
+def quiz():
     return render_template("quiz.html")
 
 if __name__=='__main__':

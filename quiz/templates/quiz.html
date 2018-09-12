@@ -14,22 +14,27 @@
     #table {
         background-color: rgb(195, 0, 255);
         border: 4px solid black;
+        margin-left:auto ;
+        margin-right: auto;
         width: 420px;
         height: 400px;
         color: white;
         text-align: center;
+        
     }
 </style>
 <div id="father">
-<div>
-<img class="left" src="http://danongviet.vn/wp-content/uploads/2017/12/7-kieu-khuon-mat-nam.png"  width="420px" height="400px" >
-</div>
-<div><h1 class="left" id="title">Let's make <br> a quiz <br> to find <br> your's face</h1></div>
-<div id="table" class="left">
-    <h3 id="ques"></h3>     
-    <button id="a1"></button>
-    <button id="a2"></button>
-<script src="{{ url_for('static',filename='quiz.js') }}"></script> 
+<div><h1 id="title">Let's make a quiz to find your's face</h1></div>
+
+<div id="table">
+    <h3 style="font-size: 1.5rem; color:wheat ;" id="ques"></h3>     
+    <button style=" color:black ; background-color:springgreen ;width: 100px; height:50px ;" id="a1"></button>
+    <button style="color:black ;background-color:white;width: 100px; height:50px ; " id="a2"></button>
+    <br><br><br><br><br><br><br>
+    <button>
+    <a style="margin-left: auto; margin-right: auto; font-size: 1em; color:sienna;text-decoration:none" href="{{ url_for('quiz')}}">Reset</a>
+    </button>
+    <script src="{{ url_for('static',filename='quiz.js') }}"></script> 
 </div>
 </div>
 
